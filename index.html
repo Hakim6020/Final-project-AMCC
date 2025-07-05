@@ -9,15 +9,15 @@
         <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
         <title>Car Rental Service</title>
     </head>
-    <body class="w-dvw">
+    <body>
         <!-- Navbar -->
-        <nav class="z-20 bg-white py-4 px-6 flex justify-center fixed top-0 left-0 right-0 shadow-lg text-lg lg:px-12 lg:py-6 lg:text-xl">
+        <nav class="z-20 bg-white py-4 px-6 flex items-center justify-center fixed top-0 left-0 right-0 shadow-lg text-lg lg:px-12 lg:py-6 lg:text-xl">
             <!-- Logo -->
-            <div id="logo" class="flex items-baseline">
+            <a href="index.html" id="logo" class="flex items-baseline">
                 <div id="circle" class="aspect-square h-14 rounded-full bg-blue-600 text-white text-6xl font-medium flex items-center justify-center lg:h-16 lg:text-7xl">R</div>
                 <p class="text-4xl font-medium text-blue-600 relative right-2 lg:text-5xl">entago.</p>
-            </div>
-            <img src="assets/img/menu.png" alt="Menu" id="menu-btn" class="h-14 sm:block order-1 lg:hidden lg:order-0">
+            </a>
+            <img src="assets/img/menu.png" alt="Menu" id="menu-btn" class="h-14 cursor-pointer sm:block order-1 lg:hidden lg:order-0">
             <div class="w-3/4 flex justify-end gap-16 lg:justify-evenly">
                 <div id="nav-btn" class="flex justify-center gap-16 order-1 lg:w-full lg:order-0">
                     <button class="relative text-gray-600 font-medium hover:font-bold hover:text-black hidden lg:block">Home</button>
@@ -37,10 +37,37 @@
         </nav>
 
         <!-- Menu -->
-        
+        <div id="menu" class="w-fit h-fit hidden overflow-auto">
+            <div id="offcanvas" class="fixed top-0 bottom-0 right-0 left-10 bg-white z-99 shadow-xl rounded-2xl p-8 flex flex-col gap-8">
+                <!-- Menu Top -->
+                <div id="menu-header" class="border-b-1 border-gray-400 pb-4 flex items-center justify-between">
+                    <!-- Location Details -->
+                    <div id="loc" class="gap-2 items-center flex">
+                        <img src="assets/img/location-navbar.svg" alt="location" class="w-20" />
+                        <div id="location-detail" class="flex flex-col">
+                            <p class="text-md lg:text-lg">Your location</p>
+                            <p class="text-blue-500 font-semibold text-xl lg:text-2xl">Indonesia</p>
+                        </div>
+                    </div>
+                    <!-- Close Button -->
+                    <div id="close">
+                        <img src="assets/img/close.png" alt="Close" class="h-6 cursor-pointer" />
+                    </div>
+                </div>
+                <!-- Menu Content -->
+                <div id="menu-content">
+                    <div id="nav-btn" class="text-2xl flex flex-col gap-8">
+                        <a href="index.html" class="relative text-gray-600 font-medium px-3 py-5 rounded-xl active:font-bold hover:text-black hover:bg-gray-100 transition-colors duration-400">Home</a>
+                        <a href="pages/booking-page.html" class="relative text-gray-600 font-medium px-3 py-5 rounded-xl active:font-bold hover:text-black hover:bg-gray-100 transition-colors duration-400">Booking</a>
+                        <a href="#" class="relative text-gray-600 font-medium px-3 py-5 rounded-xl active:font-bold hover:text-black hover:bg-gray-100 transition-colors duration-400">Promo</a>
+                        <a href="#" class="relative text-gray-600 font-medium px-3 py-5 rounded-xl active:font-bold hover:text-black hover:bg-gray-100 transition-colors duration-400">Help</a>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <!-- Hero section -->
-        <header id="hero" style="background-image: url('assets/img/background-image.png')" class="mt-40 h-dvh bg-cover rounded-t-3xl flex items-center justify-center">
+        <header id="hero" style="background-image: url('assets/img/background-image.png')" class="mt-30 h-dvh bg-cover rounded-t-3xl flex items-center justify-center lg:mt-40">
             <div class="relative w-10/12 flex items-center justify-center">
                 <div class="w-4/5 flex flex-col gap-16">
                     <p class="text-white text-5xl font-bold">Easy and fast way to rent your car</p>
@@ -220,10 +247,10 @@
         <footer class="bg-blue-950 mt-16 py-16 rounded-t-2xl flex justify-around">
             <div id="footer-col1" class="w-2/5 flex flex-col gap-8">
                 <!-- Rentago. Logo -->
-                <div id="logo" class="flex items-baseline">
+                <a href="index.html" id="logo" class="flex items-baseline">
                     <div id="circle" class="aspect-square h-16 rounded-full bg-white text-blue-950 text-7xl font-medium flex items-center justify-center">R</div>
                     <p class="text-5xl font-medium text-white relative right-2">entago.</p>
-                </div>
+                </a>
                 <p class="text-white">Rentago.com is trading name of booking.com Transport Limited which is a limited company registered in Indonesia and Singapore (+62)89567457145 registered address is at Depok Special Region of Yogyakarta, Indonesia.</p>
                 <p class="text-white">Rentago.com is part of booking.in , the world leader in online travel & related services.</p>
                 <p class="text-white text-xs">Copyright &copy; 2025 Rent.com Transport Limited All right reserved</p>
