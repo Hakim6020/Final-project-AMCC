@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../src/css/input.css" />
+    <link rel="stylesheet" href="../src/css/output.css" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <title>Car Booking</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="bg-gray-200 px-12 py-10 flex items-center justify-between fixed top-0 left-0 right-0 z-10 shadow-lg shadow-gray-300">
+        <!-- Logo -->
+        <div id="logo" class="flex items-baseline">
+            <div id="circle" class="aspect-square h-16 rounded-full bg-blue-600 text-gray-200 text-7xl font-medium flex items-center justify-center">R</div>
+            <p class="text-5xl font-medium text-blue-600 relative right-2">entago.</p>
+        </div>
+        <!-- Navbar liks -->
+        <div id="nav-btn" class="w-sm flex justify-between">
+            <a href="../index.html" class="relative text-xl text-gray-600 font-medium hover:font-bold hover:text-black">Home</a>
+            <a href="#" class="relative text-xl text-gray-600 font-medium hover:font-bold hover:text-black">Booking</a>
+            <a href="#" class="relative text-xl text-gray-600 font-medium hover:font-bold hover:text-black">Promo</a>
+            <a href="#" class="relative text-xl text-gray-600 font-medium hover:font-bold hover:text-black">Help</a>
+        </div>
+        <!-- Location details -->
+        <div id="loc" class="flex gap-2 items-center">
+            <div id="loc-caption flex flex-col items-center">
+                <p class="text-lg">Your location</p>
+                <p class="text-2xl text-blue-500 font-semibold">Indonesia</p>
+            </div>
+            <img src="../assets/img/location-navbar.svg" alt="location" class="w-20" />
+        </div>
+    </nav>
+
+    <!-- Gallery Section -->
+    <section id="car-gallery" class="mt-40 w-full flex flex-col items-center gap-6">
+        <img src="../assets/img/car2.png" alt="Gray Avanza" class="w-1/2">
+        <div id="car-interior-img-group" class="w-5/6 flex gap-8">
+            <div id="car-item1">
+                <img src="../assets/img/interior1.png" alt="Interior 1" class="">
+            </div>
+            <div id="car-item2">
+                <img src="../assets/img/interior2.png" alt="Interior 2" class="">
+            </div>
+            <div id="car-item3">
+                <img src="../assets/img/interior3.png" alt="Interior 3" class="">
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking details -->
+    <section id="booking-details" class="mt-20 flex flex-col items-center gap-10">
+        <div id="booking-details-title" class="w-10/12">
+            <h1 class="text-5xl">Detail Pemesanan</h1>
+        </div>
+        <div id="booking-details-content" class="w-10/12 flex justify-between">
+            <div id="col1" class="w-1/2 flex flex-col gap-4">
+                <div id="booking-duration" class="p-4 rounded-3xl flex gap-5 items-center bg-blue-100">
+                    <img src="../assets/img/clock-fill.png" alt="Clock" class="w-6">
+                    <p>Booking Duration</p>
+                </div>
+                <div id="booking-date" class="p-4 rounded-3xl flex gap-5 items-center bg-blue-100">
+                    <img src="../assets/img/calendar-fill.png" alt="Calendar" class="w-6">
+                    <p>Booking Date</p>
+                </div>
+                <div id="fullname" class="p-4 rounded-3xl flex gap-5 items-center bg-blue-100">
+                    <img src="../assets/img/user-fill.png" alt="User" class="w-6">
+                    <p>Full Name</p>
+                </div>
+                <div id="email" class="p-4 rounded-3xl flex gap-5 items-center bg-blue-100">
+                    <img src="../assets/img/email-fill.png" alt="Email" class="w-6">
+                    <p>Email Address</p>
+                </div>
+                <div id="phone" class="p-4 rounded-3xl flex gap-5 items-center bg-blue-100">
+                    <img src="../assets/img/phone-fill.png" alt="Phone" class="w-6">
+                    <p>Phone Number</p>
+                </div>
+            </div>
+            <div id="col2" class="w-5/12 p-8 shadow-xl rounded-2xl flex flex-col justify-between">
+                <p id="days" class="p-6 bg-blue-400 rounded-xl w-fit font-medium text-white">2 Days</p>
+                <div id="warning" class="p-8 bg-blue-300 rounded-2xl flex gap-6">
+                    <img src="../assets/img/warning.png" alt="Warning" class="h-12">
+                    <p>Baca ketentuan terlebih dahulu sebelum menyewa!</p>
+                </div>
+                <div id="total-prize" class="flex justify-between">
+                    <p class="text-lg font-medium">Total Harga</p>
+                    <p class="text-xl font-medium">IDR 305.000</p>
+                </div>
+            </div>
+        </div>
+        <div id="booking-button" class="w-10/12 flex justify-end">
+            <a href="#" class="px-36 py-6 bg-green-500 text-white text-xl font-medium rounded-2xl hover:bg-green-600">Continue <span class="text-2xl">&rightarrow;</span></a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-950 mt-16 py-16 rounded-t-2xl flex justify-around">
+        <div id="footer-col1" class=" w-2/5 flex flex-col gap-8">
+            <!-- Rent. Logo -->
+            <div id="logo" class="flex items-baseline">
+                <div id="circle" class="aspect-square h-16 rounded-full bg-white text-blue-950 text-7xl font-medium flex items-center justify-center">R</div>
+                <p class="text-5xl font-medium text-white relative right-2">entago.</p>
+            </div>
+            <p class="text-white">Rentago.com is trading name of booking.com Transport Limited which is a limited company registered in Indonesia and Singapore (+62)89567457145 registered address is at Depok Special Region of Yogyakarta, Indonesia.</p>
+            <p class="text-white">Rentago.com is part of booking.in , the world leader in online travel & related services.</p>
+            <p class="text-white text-xs">Copyright &copy; 2025 Rentago.com Transport Limited All right reserved</p>
+        </div>
+        <div id="footer-col2" class="w-2/5 flex flex-col items-end justify-between">
+            <div id="nav-links" class="w-full flex justify-end gap-16">
+                <a href="../index.html" class="font-medium text-blue-300 hover:text-white">Home</a>
+                <a href="#" class="font-medium text-blue-300 hover:text-white">Booking</a>
+                <a href="#" class="font-medium text-blue-300 hover:text-white">Promo</a>
+                <a href="#" class="font-medium text-blue-300 hover:text-white">Help</a>
+            </div>
+            <div id="social-media" class="flex gap-6">
+                <div id="social-media-1" class="w-16 h-16 p-4 rounded-full inset-shadow-sm inset-shadow-gray-400 flex items-center justify-center">
+                    <img src="../assets/img/facebook-logo.png" alt="" class="w-3/4">
+                </div>
+                <div id="social-media-2" class="w-16 h-16 p-4 rounded-full inset-shadow-sm inset-shadow-gray-400 flex items-center justify-center">
+                    <img src="../assets/img/instagram-logo.png" alt="" class="w-3/4">
+                </div>
+                <div id="social-media-3" class="w-16 h-16 p-4 rounded-full inset-shadow-sm inset-shadow-gray-400 flex items-center justify-center">
+                    <img src="../assets/img/linkedin-logo.png" alt="" class="w-3/4">
+                </div>
+                <div id="social-media-4" class="w-16 h-16 p-4 rounded-full inset-shadow-sm inset-shadow-gray-400 flex items-center justify-center">
+                    <img src="../assets/img/youtube-logo.png" alt="" class="w-3/4">
+                </div>
+            </div>
+            <a href="index.html" id="rent-domain" class="text-white px-16 py-4 rounded-full inset-shadow-sm inset-shadow-gray-400">Rentago.com</a>
+        </div>
+    </footer>
+</body>
+</html>

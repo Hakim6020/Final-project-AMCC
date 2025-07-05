@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../src/css/input.css" />
+    <link rel="stylesheet" href="../src/css/output.css" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <title>Detail Car</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="bg-gray-200 px-12 py-10 flex items-center justify-between fixed top-0 left-0 right-0 z-10 shadow-lg shadow-gray-300">
+        <!-- Logo -->
+        <div id="logo" class="flex items-baseline">
+            <div id="circle" class="aspect-square h-16 rounded-full bg-blue-600 text-gray-200 text-7xl font-medium flex items-center justify-center">R</div>
+            <p class="text-5xl font-medium text-blue-600 relative right-2">entago.</p>
+        </div>
+        <!-- Navbar liks -->
+        <div id="nav-btn" class="w-sm flex justify-between">
+            <a href="../index.html" class="relative text-xl text-gray-600 font-medium hover:font-bold hover:text-black">Home</a>
+            <a href="../pages/booking-page.html" class="relative text-xl text-gray-600 font-medium hover:font-bold hover:text-black">Booking</a>
+            <a href="#" class="relative text-xl text-gray-600 font-medium hover:font-bold hover:text-black">Promo</a>
+            <a href="#" class="relative text-xl text-gray-600 font-medium hover:font-bold hover:text-black">Help</a>
+        </div>
+        <!-- Location details -->
+        <div id="loc" class="flex gap-2 items-center">
+            <div id="loc-caption flex flex-col items-center">
+                <p class="text-lg">Your location</p>
+                <p class="text-2xl text-blue-500 font-semibold">Indonesia</p>
+            </div>
+            <img src="../assets/img/location-navbar.svg" alt="location" class="w-20" />
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="mt-40 flex items-center justify-center">
+        <img src="../assets/img/car-hero.png" alt="Black Avanza" class="w-10/12">
+    </section>
+
+    <!-- Car Spesification -->
+    <section id="car-details" class="mt-20 flex flex-col items-center">
+        <div id="car-details-container" class="w-2/3 flex flex-col gap-8">
+            <div id="detail-header" class="flex justify-between">
+                <div id="detail-title" class="flex flex-col gap-4">
+                    <h1 class="font-medium text-5xl text-gray-600">Cities car</h1>
+                    <h1 class="font-semibold text-6xl text-blue-500">Toyota Avanza <span class="text-3xl">(Black)</span></h1>
+                </div>
+                <div id="rating" class="w-fit h-fit px-4 py-2 rounded-xl bg-yellow-400 flex items-center gap-3">
+                    <p>3/5</p>
+                    <img src="../assets/img/star.svg" alt="Star">
+                </div>
+            </div>
+            <div id="detail" class="p-8 border-2 border-gray-400 rounded-2xl flex flex-col items-stretch lg:flex-row ">
+                <div id="cubics" class="p-4 w-full flex flex-col gap-4 items-center self-baseline">
+                    <img src="../assets/img/star.svg" alt="Star" class="w-16">
+                    <p class="text-blue-500 text-4xl font-bold">1500 cc</p>
+                </div>
+                <div class="gray-line w-2 bg-gray-300"></div>
+                <div id="max-seat" class="p-4 w-full flex flex-col gap-4 items-center self-baseline">
+                    <img src="../assets/img/seat.svg" alt="Seat" class="w-16">
+                    <p class="text-blue-500 text-4xl font-bold">Max 8</p>
+                </div>
+                <div class="gray-line w-2 bg-gray-300"></div>
+                <div id="car-speed" class="p-4 w-full flex flex-col gap-4 items-center self-baseline">
+                    <img src="../assets/img/speed.svg" alt="Speed" class="w-16">
+                    <p class="text-blue-500 text-4xl font-bold">250 kmh</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Articles -->
+    <article id="about-car" class="mt-14 flex justify-center">
+        <div id="container" class="w-2/3 flex flex-col gap-6">
+            <h1 id="about-title" class="text-4xl font-semibold">About</h1>
+            <p class="text-xl text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur quo, ducimus maxime numquam vitae non repellat, enim maiores nesciunt quasi, autem fuga pariatur quidem fugit? Obcaecati odio fugit dolores exercitationem accusamus atque impedit, ipsum adipisci porro reiciendis maiores deserunt numquam ratione amet quos ea distinctio nulla, consectetur dolorem deleniti earum aut veritatis, id voluptate! Totam magni numquam eligendi quibusdam, amet natus a distinctio mollitia suscipit ipsum, alias minima. Molestias, facilis!</p>
+        </div>
+    </article>
+
+    <!-- Gallery Section -->
+    <section id="car-gallery" class="mt-16 flex justify-center">
+        <div id="gallery-container" class="w-2/3 flex flex-col gap-8">
+            <h1 class="text-4xl font-semibold">Gallery</h1>
+            <div id="img-gallery-container" class="flex gap-4 overflow-auto">
+                <img src="../assets/img/interior1.png" alt="Interior 1">
+                <img src="../assets/img/interior2.png" alt="Interior 2">
+                <img src="../assets/img/interior3.png" alt="Interior 3">
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimony Section -->
+    <section id="car-rating" class="mt-16 flex justify-center">
+        <div id="car-rating-container" class="w-2/3 flex flex-col gap-8">
+            <h1 class="text-4xl font-semibold">Rating</h1>
+            <div id="persons" class="flex flex-col gap-6">
+                <div id="person1" class="person flex flex-col gap-4">
+                    <div id="person-rating-details" class="flex justify-between">
+                        <div id="person-details" class="flex gap-6 items-center">
+                            <div id="person-icon" class="bg-gray-400 w-fit aspect-square rounded-full p-6">
+                                <img src="../assets/img/user.svg" alt="User" class="w-12">
+                            </div>
+                            <div id="person-title" class="flex flex-col gap-2">
+                                <h2 class="text-3xl font-semibold">Hafiz Arul</h2>
+                                <p class="text-2xl font-medium text-blue-500">Customer</p>
+                            </div>
+                        </div>
+                        <div id="rating-star" class="flex gap-2">
+                            <img src="../assets/img/star-stroke.png" alt="Star" class="h-1/4">
+                            <img src="../assets/img/star-stroke.png" alt="Star" class="h-1/4">
+                            <img src="../assets/img/star.svg" alt="Star" class="h-1/4">
+                            <img src="../assets/img/star.svg" alt="Star" class="h-1/4">
+                            <img src="../assets/img/star.svg" alt="Star" class="h-1/4">
+                        </div>
+                    </div>
+                    <div id="person-testimony" class="bg-gray-200 rounded-2xl p-6">
+                        <p class="text-justify">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur dignissimos aut quae voluptatibus officia illo ipsam ducimus placeat recusandae blanditiis! Suscipit architecto deserunt earum voluptas dolorem aliquam temporibus doloremque ad.</p>
+                    </div>
+                </div>
+                <div id="person2" class="person flex flex-col gap-4">
+                    <div id="person-rating-details" class="flex justify-between">
+                        <div id="person-details" class="flex gap-6 items-center">
+                            <div id="person-icon" class="bg-gray-400 w-fit aspect-square rounded-full p-6">
+                                <img src="../assets/img/user.svg" alt="User" class="w-12">
+                            </div>
+                            <div id="person-title" class="flex flex-col gap-2">
+                                <h2 class="text-3xl font-semibold">Hakim</h2>
+                                <p class="text-2xl font-medium text-blue-500">Customer</p>
+                            </div>
+                        </div>
+                        <div id="rating-star" class="flex gap-2">
+                            <img src="../assets/img/star-stroke.png" alt="Star" class="h-1/4">
+                            <img src="../assets/img/star-stroke.png" alt="Star" class="h-1/4">
+                            <img src="../assets/img/star.svg" alt="Star" class="h-1/4">
+                            <img src="../assets/img/star.svg" alt="Star" class="h-1/4">
+                            <img src="../assets/img/star.svg" alt="Star" class="h-1/4">
+                        </div>
+                    </div>
+                    <div id="person-testimony" class="bg-gray-200 rounded-2xl p-6">
+                        <p class="text-justify">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur dignissimos aut quae voluptatibus officia illo ipsam ducimus placeat recusandae blanditiis! Suscipit architecto deserunt earum voluptas dolorem aliquam temporibus doloremque ad.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section id="car-book" class="mt-8 flex flex-col items-center">
+        <div id="car-book-container" class="w-2/3 bg-blue-500 p-8 rounded-2xl flex flex-col gap-4 items-stretch justify-between md:flex-row">
+            <div id="book-details" class="flex flex-col gap-4 text-white">
+                <h1 class="text-4xl font-medium">Rp 350.000</h1>
+                <p class="text-lg ">/1 hari sewa</p>
+            </div>
+            <button class="bg-green-400 text-2xl font-semibold text-white rounded-xl hover:bg-green-500 px-8 py-6 transition-all duration-300">Book Now!</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-950 mt-16 py-16 rounded-t-2xl flex justify-around">
+        <div id="footer-col1" class=" w-2/5 flex flex-col gap-8">
+            <!-- Rent. Logo -->
+            <div id="logo" class="flex items-baseline">
+                <div id="circle" class="aspect-square h-16 rounded-full bg-white text-blue-950 text-7xl font-medium flex items-center justify-center">R</div>
+                <p class="text-5xl font-medium text-white relative right-2">entago.</p>
+            </div>
+            <p class="text-white">Rentago.com is trading name of booking.com Transport Limited which is a limited company registered in Indonesia and Singapore (+62)89567457145 registered address is at Depok Special Region of Yogyakarta, Indonesia.</p>
+            <p class="text-white">Rentago.com is part of booking.in , the world leader in online travel & related services.</p>
+            <p class="text-white text-xs">Copyright &copy; 2025 Rent.com Transport Limited All right reserved</p>
+        </div>
+        <div id="footer-col2" class="w-2/5 flex flex-col items-end justify-between">
+            <div id="nav-links" class="w-full flex justify-end gap-16">
+                <a href="../index.html" class="font-medium text-blue-300 hover:text-white">Home</a>
+                <a href="../pages/booking-page.html" class="font-medium text-blue-300 hover:text-white">Booking</a>
+                <a href="#" class="font-medium text-blue-300 hover:text-white">Promo</a>
+                <a href="#" class="font-medium text-blue-300 hover:text-white">Help</a>
+            </div>
+            <div id="social-media" class="flex gap-6">
+                <div id="social-media-1" class="w-16 h-16 p-4 rounded-full inset-shadow-sm inset-shadow-gray-400 flex items-center justify-center">
+                    <img src="../assets/img/facebook-logo.png" alt="" class="w-3/4">
+                </div>
+                <div id="social-media-2" class="w-16 h-16 p-4 rounded-full inset-shadow-sm inset-shadow-gray-400 flex items-center justify-center">
+                    <img src="../assets/img/instagram-logo.png" alt="" class="w-3/4">
+                </div>
+                <div id="social-media-3" class="w-16 h-16 p-4 rounded-full inset-shadow-sm inset-shadow-gray-400 flex items-center justify-center">
+                    <img src="../assets/img/linkedin-logo.png" alt="" class="w-3/4">
+                </div>
+                <div id="social-media-4" class="w-16 h-16 p-4 rounded-full inset-shadow-sm inset-shadow-gray-400 flex items-center justify-center">
+                    <img src="../assets/img/youtube-logo.png" alt="" class="w-3/4">
+                </div>
+            </div>
+            <a href="index.html" id="rent-domain" class="text-white px-16 py-4 rounded-full inset-shadow-sm inset-shadow-gray-400 hover:bg-blue-900">Rentago.com</a>
+        </div>
+    </footer>
+</body>
+</html>
