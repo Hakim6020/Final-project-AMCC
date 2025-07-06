@@ -154,6 +154,6 @@ Berikut adalah fitur-fitur yang kami rencanakan untuk Rentago.com:
 
 ## 👨‍💻 Tim Kami
 - Hafiz Arul Zaky
-- Hakim
+- Luqman Nul Hakim
 
 ---
